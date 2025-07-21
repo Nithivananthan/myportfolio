@@ -48,8 +48,8 @@ function Home({ image }) {
             ></i>
           </a>
           <br></br>
-          <button className="hire-btn">Hire Me</button>{" "}
-         <button className="contact-btn" onClick={gotocontact}>Contact Me</button>
+          <button onClick={gotocontact} className="hire-btn">Hire Me</button>{" "}
+        <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf"><button className="contact-btn">Resume</button></a>
         <Link to='/about'><h2>Learn More About Me.</h2></Link>
         </div>
         <hr className="hr"></hr>
