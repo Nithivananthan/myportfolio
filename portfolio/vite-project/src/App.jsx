@@ -3,7 +3,7 @@ import Nav from './components/Nav'
 import "./App.css"
 import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import image from './assets/IMG_20241106_134112.jpg'
+import image from './assets/InShot_20250720_111756152.jpg'
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 import About from './components/About';

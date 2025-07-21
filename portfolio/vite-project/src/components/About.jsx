@@ -26,7 +26,8 @@ function About({ image }) {
             and Node.js to bring ideas to life.
           </h3>
          <a href="mailto:mnithivananthan@gmail.com"><h3>mnithivananthan@gmail.com</h3></a>
-          <button>View Resume</button>
+         <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf" download><button>Download Resume</button></a>
+          <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf"><button>View Resume</button></a>
           <br></br>
           <a href="https://www.facebook.com/m.nithivananthan.9">
             <i

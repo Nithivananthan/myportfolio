@@ -16,7 +16,7 @@ function Home() {
            <Link to='/skills'><li className='nav-item'>Skills</li></Link>
             <li className='nav-item'>Projects</li>
             <Link to='/contact'><li className='nav-item'>Contact</li></Link>
-        </ul>
+        </ul>  
         <div className='nav-menu' onClick={()=>setsidenav(true)}><i className="fas fa-bars"></i>
         </div> 
      </div>

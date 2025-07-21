@@ -12,7 +12,7 @@ function Home({ image }) {
           <img className="profile-pic" src={image} />
         </div>
         <div className="profile-con">
-          <h2 style={{ color: "rgb(23, 178, 230)" }}>Hello,I'm</h2>
+          <h2 style={{ color: "rgb(23, 178, 230)" }}>Hello, I'm</h2>
           <h1>Nithivananthan M</h1>
           <h2>
             And I'm a
