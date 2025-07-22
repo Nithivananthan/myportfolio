@@ -25,9 +25,18 @@ function About({ image }) {
             clean, scalable code. I love working with MongoDB, Express, React,
             and Node.js to bring ideas to life.
           </h3>
-         <a href="mailto:mnithivananthan@gmail.com"><h3>mnithivananthan@gmail.com</h3></a>
-         <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf" download><button>Download Resume</button></a>
-          <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf"><button>View Resume</button></a>
+          <a href="mailto:mnithivananthan@gmail.com">
+            <h3>mnithivananthan@gmail.com</h3>
+          </a>
+          <a
+            href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf"
+            download
+          >
+            <button>Download Resume</button>
+          </a>
+          <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf">
+            <button>View Resume</button>
+          </a>
           <br></br>
           <a href="https://www.facebook.com/m.nithivananthan.9">
             <i
@@ -70,7 +79,19 @@ function About({ image }) {
           I have completed my Schooling at Sri Gayathri Higher Secondary
           School,Salem,Tamil Nadu,India.
         </p>
-        <h3>SSLC Percentage :81%  <h3>HSC :72.8%</h3></h3>
+        <h3>
+          SSLC Percentage :81% <h3>HSC :72.8%</h3>
+        </h3>
+      </div>
+      <div className="skill">
+        <h1>Skill</h1>
+        <h3>
+          I have strong skills in full-stack development using the MERN stack
+          (MongoDB, Express, React, Node.js). I’m also confident in using tools
+          like Git, GitHub, Postman, and modern frontend libraries like Tailwind
+          CSS.
+        </h3>
+        <button>View Skills</button>
       </div>
     </div>
   );

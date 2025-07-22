@@ -400,6 +400,38 @@ footer i:hover{
 .education h1,h2,h3,p{
   margin-top: 20px;
 }
+.skill{
+   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+.skill h3{
+  max-width: 850px;
+  font-weight: bold;
+}
+.skill button{
+  margin-top: 20px;
+  padding: 0.8%;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0px 0px 10px;
+}
+.skill button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
 @media(max-width:1000px){
     .nav-menu i{
       display: flex;
@@ -453,6 +485,9 @@ footer i:hover{
   .about-content h3{
     font-size: 1rem;
   }
+  .skill {
+    font-size: 12px;
+  }
 }
 @media(max-width:600px){
     .nav-menu i{
@@ -465,7 +500,9 @@ footer i:hover{
     .side-nav{
       width: 50%;
     }
-   
+   .skill button{
+     padding: 10px;
+   }
 }
 
 @media(max-width:450px){
