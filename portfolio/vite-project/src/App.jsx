@@ -7,6 +7,7 @@ import image from './assets/InShot_20250720_111756152.jpg'
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 import About from './components/About';
+import Footer from './components/footer';
 function App() {
    const skills = [
   {
@@ -32,6 +33,7 @@ function App() {
   {
     name: "Express",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    color:'white'
   },
   {
     name: "MongoDB",
@@ -61,6 +63,7 @@ function App() {
     <Route path='/skills' element={<Skills skills={skills}/>} />
     <Route path='/about' element={<About image={image}/>}/>
     </Routes>
+    <Footer/>
  </BrowserRouter>
  </>
   )

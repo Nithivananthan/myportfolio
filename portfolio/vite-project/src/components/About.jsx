@@ -1,6 +1,11 @@
-import React from "react";
+import React, { use } from "react";
+import { useNavigate } from "react-router-dom";
 
 function About({ image }) {
+  const navigate =useNavigate();
+  function nav(){
+    navigate('/skills')
+  }
   return (
     <div>
       <div className="about-container">
@@ -86,12 +91,12 @@ function About({ image }) {
       <div className="skill">
         <h1>Skill</h1>
         <h3>
-          I have strong skills in full-stack development using the MERN stack
-          (MongoDB, Express, React, Node.js). I’m also confident in using tools
+          I have strong skills in full-stack development using the <span style={{color:'rgb(23, 178, 230)'}}>MERN stack</span> {" "}
+          <span style={{color:"orangered"}}>(MongoDB, Express, React, Node.js)</span>. I’m also confident in using tools
           like Git, GitHub, Postman, and modern frontend libraries like Tailwind
           CSS.
         </h3>
-        <button>View Skills</button>
+        <button onClick={nav}>View Skills</button>
       </div>
     </div>
   );
