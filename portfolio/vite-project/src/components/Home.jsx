@@ -96,7 +96,7 @@ function Home({ image}) {
       <div className="skills-slider">
         {skills.map((skill, index) => (
           <div className="skill-item" key={index}>
-            <img style={{color:skill.color}} src={skill.image} alt={skill.name} />
+            <img  src={skill.image} alt={skill.name} />
 
           </div>
         ))}

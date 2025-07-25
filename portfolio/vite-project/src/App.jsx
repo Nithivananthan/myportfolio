@@ -33,7 +33,6 @@ function App() {
   {
     name: "Express",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    color:'white'
   },
   {
     name: "MongoDB",
