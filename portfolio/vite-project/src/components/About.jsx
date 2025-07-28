@@ -6,6 +6,9 @@ function About({ image }) {
   function nav(){
     navigate('/skills')
   }
+  function navcontact(){
+    navigate('/contact')
+  }
   return (
     <div>
       <div className="about-container">
@@ -33,12 +36,7 @@ function About({ image }) {
           <a href="mailto:mnithivananthan@gmail.com">
             <h3>mnithivananthan@gmail.com</h3>
           </a>
-          <a
-            href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf"
-            download
-          >
-            <button>Download Resume</button>
-          </a>
+            <button onClick={navcontact}>Let's Connect</button>
           <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf">
             <button>View Resume</button>
           </a>
