@@ -19,6 +19,10 @@ function Home({ image}) {
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
     {
+        name: "Express",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      },
+    {
       name: "React",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
@@ -96,19 +100,18 @@ function Home({ image}) {
       <div className="skills-slider">
         {skills.map((skill, index) => (
           <div className="skill-item" key={index}>
-            <img  src={skill.image} alt={skill.name} />
-
+            <img className="icon-shadow"  src={skill.image} alt={skill.name} />
           </div>
         ))}
         {skills.map((skill, index) => (
           <div className="skill-item" key={`dup-${index}`}>
-            <img src={skill.image} alt={skill.name} />
+            <img className="icon-shadow" src={skill.image} alt={skill.name} />
            
           </div>
         ))}
         {skills.map((skill, index) => (
           <div className="skill-item" key={`dup-${index}`}>
-            <img src={skill.image} alt={skill.name} />
+            <img className="icon-shadow" src={skill.image} alt={skill.name} />
          
           </div>
         ))}

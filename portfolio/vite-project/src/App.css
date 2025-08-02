@@ -151,6 +151,9 @@ body{
   transform-style: preserve-3d;
   
 }
+.icon-shadow{
+  filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px 1px 0 white);
+}
 @keyframes rotateIcon {
   from {
     transform: rotateY(0deg) rotateX(0deg);
