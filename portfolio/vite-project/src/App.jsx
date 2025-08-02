@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 import About from './components/About';
 import Footer from './components/footer';
+import Welcome from './components/WelcomePage';
+import Project from './components/Project';
 function App() {
    const skills = [
   {
@@ -55,14 +57,14 @@ function App() {
   return (
  <>
  <BrowserRouter>
-   <Nav/>
    <Routes>
-    <Route path='/' element={<Home image={image}/>} />
-    <Route path='/contact' element={<Contact/>}/>
-    <Route path='/skills' element={<Skills skills={skills}/>} />
-    <Route path='/about' element={<About image={image}/>}/>
+    <Route path='/' element={<Welcome image={image}/>}/>
+    <Route path='/home' element={<><Nav/><Home image={image}/><Footer/></>} />
+    <Route path='/contact' element={<><Nav/><Contact/><Footer/></>}/>
+    <Route path='/skills' element={<><Nav/><Skills skills={skills}/><Footer/></>} />
+    <Route path='/about' element={<><Nav/><About image={image}/><Footer/></>}/>
+    <Route path='/project' element={<><Nav/><Project/><Footer/></>}/>
     </Routes>
-    <Footer/>
  </BrowserRouter>
  </>
   )

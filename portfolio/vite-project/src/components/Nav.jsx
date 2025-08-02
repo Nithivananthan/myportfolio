@@ -11,10 +11,10 @@ function Home() {
      </div>
      <div>
         <ul className='nav-container'> 
-           <Link to='/'><li className='nav-item'>Home</li></Link>
+           <Link to='/home'><li className='nav-item'>Home</li></Link>
            <Link to='/about'><li className='nav-item'>About</li></Link>
            <Link to='/skills'><li className='nav-item'>Skills</li></Link>
-            <li className='nav-item'>Projects</li>
+           <Link to='/project'><li className='nav-item'>Projects</li></Link> 
             <Link to='/contact'><li className='nav-item'>Contact</li></Link>
         </ul>  
         <div className='nav-menu' onClick={()=>setsidenav(true)}><i className="fas fa-bars"></i>
@@ -29,7 +29,7 @@ function Home() {
           <Link to='/'><li className='side-item'>Home</li></Link>
            <Link to='/about'><li className='side-item'>About</li></Link> 
            <Link to ='skills'><li className='side-item'>Skills</li></Link>
-            <li className='side-item'>Projects</li>
+           <Link to='/project'><li className='side-item'>Projects</li></Link> 
             <Link to='/contact'><li className='side-item'>Contact</li></Link>
       </ul>
      </div>
