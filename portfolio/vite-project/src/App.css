@@ -386,6 +386,13 @@ footer i:hover{
 .about-content i{
   margin: 15px;
   margin-top: 30px;
+  
+}
+.about-content i:hover{
+     box-shadow: 0px 0px 5px white;
+     padding: 5px;
+     border: none;
+     border-radius: 100%;
 }
 .education{
   color: white;
