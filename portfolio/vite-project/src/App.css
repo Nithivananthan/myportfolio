@@ -119,7 +119,6 @@ body{
   object-fit: cover;
   border-style: solid;
   border-width: 1px;
-  box-shadow: 0px 0px 50px white;
 }
 .profile-pic {
   transition: all 0.3s ease-in-out;
@@ -576,6 +575,49 @@ footer i:hover{
   margin-top: 80px;
   text-align: center;
   align-items: center;
+}
+.hanger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: 50% 0;
+  animation: swing 3.5s ease-in-out infinite;
+}
+
+.rope {
+  width: 6px;
+  height: 90px;
+  background: repeating-linear-gradient(
+    45deg,
+    white,
+    black 4px 8px
+  );
+  border-radius: 10px;
+}
+
+.knot {
+  width: 20px;
+  height: 18px;
+  background: linear-gradient(180deg, white,white);
+  border-radius: 4px 4px 8px 8px;
+  margin-top: -6px;
+}
+
+.avatar {
+  border-radius: 100%;
+  border: 4px solid white(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px white(0, 0, 0, 0.4);
+  margin-top: 12px;
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+}
+
+
+@keyframes swing {
+  0%   { transform: rotate(-5deg); }
+  50%  { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
 }
 
 .project-content {

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 function Home({ image}) {
+  const [shadow, setShadow] = useState(false);
   const Navigate =useNavigate();
   function gotocontact(){
        Navigate('/contact')
+  }
+  function shadowon() {
+    setShadow(!shadow);
   }
    const skills = [
     {
@@ -51,9 +55,13 @@ function Home({ image}) {
   return (
     <div>
       <div className="profile-container">
-        <div>
-          <img className="profile-pic" src={image} />
-        </div>
+         <div>
+    <div className="hanger">
+      <div className="rope"></div>
+      <div className="knot"></div>
+      <img className="profile-pic avatar" onClick={shadowon} style={{boxShadow: shadow ?  "none" : "0px 0px 50px white"}} src={image} alt="Profile" />
+    </div>
+  </div>
         <div className="profile-con">
           <h2 style={{ color: "rgb(23, 178, 230)" }}>Hello, I'm</h2>
           <h1>Nithivananthan M</h1>
@@ -69,25 +77,25 @@ function Home({ image}) {
           <a href="https://www.facebook.com/m.nithivananthan.9">
             <i
               style={{ color: "blue" }}
-              class="fab fa-facebook-f text-blue-600 text-2xl mr-4"
+              className="fab fa-facebook-f text-blue-600 text-2xl mr-4"
             ></i>
           </a>
           <a href="https://www.linkedin.com/in/m-nithivananthan-179b95314">
             <i
               style={{ color: "white" }}
-              class="fab fa-linkedin-in text-blue-500 text-2xl mr-4"
+              className="fab fa-linkedin-in text-blue-500 text-2xl mr-4"
             ></i>
           </a>
           <a href="https://www.github.com/nithivananthan">
             <i
               style={{ color: "white" }}
-              class="fab fa-github text-white text-2xl mr-4"
+              className="fab fa-github text-white text-2xl mr-4"
             ></i>
           </a>
           <a href="https://www.instagram.com/nithivananthan.m" target="_blank">
             <i
               style={{ color: "orangered" }}
-              class="fab fa-instagram text-pink-500 text-2xl"
+              className="fab fa-instagram text-pink-500 text-2xl"
             ></i>
           </a>
           <br></br>

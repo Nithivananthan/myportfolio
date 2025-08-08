@@ -18,19 +18,19 @@ function footer() {
             <a href="https://www.facebook.com/m.nithivananthan.9">
               <i
                 style={{ color: "blue" }}
-                class="fab fa-facebook-f text-blue-600 text-2xl mr-4"
+                className="fab fa-facebook-f text-blue-600 text-2xl mr-4"
               ></i>
             </a>
             <a href="https://www.linkedin.com/in/m-nithivananthan-179b95314">
               <i
                 style={{ background: "blue", color: "white" }}
-                class="fab fa-linkedin-in text-blue-500 text-2xl mr-4"
+                className="fab fa-linkedin-in text-blue-500 text-2xl mr-4"
               ></i>
             </a>
             <a href="https://www.github.com/nithivananthan">
               <i
                 style={{ background: "black", color: "white" }}
-                class="fab fa-github text-white text-2xl mr-4"
+                className="fab fa-github text-white text-2xl mr-4"
               ></i>
             </a>
             <a
@@ -39,7 +39,7 @@ function footer() {
             >
               <i
                 style={{ color: "orangered" }}
-                class="fab fa-instagram text-pink-500 text-2xl"
+                className="fab fa-instagram text-pink-500 text-2xl"
               ></i>
             </a>
           </div>

@@ -13,7 +13,7 @@ function About({ image }) {
     <div>
       <div className="about-container">
         <div className="about-image">
-          <img className="profile-pic" src={image} />
+          <img style={{boxShadow: "0px 0px 50px white"}} className="profile-pic" src={image} />
         </div>
         <div className="about-content">
           <h2>
@@ -44,25 +44,25 @@ function About({ image }) {
           <a href="https://www.facebook.com/m.nithivananthan.9">
             <i
               style={{ color: "blue" }}
-              class="fab fa-facebook-f text-blue-600 text-2xl mr-4"
+              className="fab fa-facebook-f text-blue-600 text-2xl mr-4"
             ></i>
           </a>
           <a href="https://www.linkedin.com/in/m-nithivananthan-179b95314">
             <i
               style={{ color: "white" }}
-              class="fab fa-linkedin-in text-blue-500 text-2xl mr-4"
+              className="fab fa-linkedin-in text-blue-500 text-2xl mr-4"
             ></i>
           </a>
           <a href="https://www.github.com/nithivananthan">
             <i
               style={{ color: "white" }}
-              class="fab fa-github text-white text-2xl mr-4"
+              className="fab fa-github text-white text-2xl mr-4"
             ></i>
           </a>
           <a href="https://www.instagram.com/nithivananthan.m" target="_blank">
             <i
               style={{ color: "orangered" }}
-              class="fab fa-instagram text-pink-500 text-2xl"
+              className="fab fa-instagram text-pink-500 text-2xl"
             ></i>
           </a>
         </div>
@@ -83,8 +83,7 @@ function About({ image }) {
           School,Salem,Tamil Nadu,India.
         </p>
         <h3>
-          SSLC Percentage :81% <h3>HSC :72.8%</h3>
-        </h3>
+          SSLC Percentage :81%</h3> <h3>HSC :72.8%</h3>
       </div>
       <div className="skill">
         <h1>Skill</h1>

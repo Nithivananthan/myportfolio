@@ -28,13 +28,13 @@ function Home() {
       <ul className='side-container'>
           <Link to='/'><li className='side-item'>Home</li></Link>
            <Link to='/about'><li className='side-item'>About</li></Link> 
-           <Link to ='skills'><li className='side-item'>Skills</li></Link>
+             <Link to='/skills'><li className='side-item'>Skills</li></Link>
            <Link to='/project'><li className='side-item'>Projects</li></Link> 
             <Link to='/contact'><li className='side-item'>Contact</li></Link>
       </ul>
      </div>
     </div>
     </div>
-  )
+  )   
 }
 export default Home
