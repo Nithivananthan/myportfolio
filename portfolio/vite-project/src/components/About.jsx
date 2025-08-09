@@ -2,18 +2,22 @@ import React, { use } from "react";
 import { useNavigate } from "react-router-dom";
 
 function About({ image }) {
-  const navigate =useNavigate();
-  function nav(){
-    navigate('/skills')
+  const navigate = useNavigate();
+  function nav() {
+    navigate("/skills");
   }
-  function navcontact(){
-    navigate('/contact')
+  function navcontact() {
+    navigate("/contact");
   }
   return (
     <div>
       <div className="about-container">
         <div className="about-image">
-          <img style={{boxShadow: "0px 0px 50px white"}} className="profile-pic" src={image} />
+          <img
+            style={{ boxShadow: "0px 0px 50px white" }}
+            className="profile-pic"
+            src={image}
+          />
         </div>
         <div className="about-content">
           <h2>
@@ -36,7 +40,7 @@ function About({ image }) {
           <a href="mailto:mnithivananthan@gmail.com">
             <h3>mnithivananthan@gmail.com</h3>
           </a>
-            <button onClick={navcontact}>Let's Connect</button>
+          <button onClick={navcontact}>Let's Connect</button>
           <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf">
             <button>View Resume</button>
           </a>
@@ -82,18 +86,33 @@ function About({ image }) {
           I have completed my Schooling at Sri Gayathri Higher Secondary
           School,Salem,Tamil Nadu,India.
         </p>
-        <h3>
-          SSLC Percentage :81%</h3> <h3>HSC :72.8%</h3>
+        <h3>SSLC Percentage :81%</h3> <h3>HSC :72.8%</h3>
       </div>
       <div className="skill">
         <h1>Skill</h1>
         <h3>
-          I have strong skills in full-stack development using the <span style={{color:'rgb(23, 178, 230)'}}>MERN stack</span> {" "}
-          <span style={{color:"orangered"}}>(MongoDB, Express, React, Node.js)</span>. I’m also confident in using tools
-          like Git, GitHub, Postman, and modern frontend libraries like Tailwind
-          CSS.
+          I have strong skills in full-stack development using the{" "}
+          <span style={{ color: "rgb(23, 178, 230)" }}>MERN stack</span>{" "}
+          <span style={{ color: "orangered" }}>
+            (MongoDB, Express, React, Node.js)
+          </span>
+          . I’m also confident in using tools like Git, GitHub, Postman, and
+          modern frontend libraries like Tailwind CSS.
         </h3>
         <button onClick={nav}>View Skills</button>
+      </div>
+      {/* Floating Icons Background */}
+      <div className="floating-icons">
+        <i className="fab fa-html5"></i>
+        <i className="fab fa-css3-alt"></i>
+        <i className="fab fa-js"></i>
+        <i className="fab fa-react"></i>
+        <i className="fab fa-node-js"></i>
+        <i className="fab fa-html5"></i>
+        <i className="fab fa-css3-alt"></i>
+        <i className="fab fa-js"></i>
+        <i className="fab fa-react"></i>
+        <i className="fab fa-node-js"></i>
       </div>
     </div>
   );

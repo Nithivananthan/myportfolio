@@ -1,67 +1,82 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-function Home({ image}) {
+function Home({ image }) {
   const [shadow, setShadow] = useState(false);
-  const Navigate =useNavigate();
-  function gotocontact(){
-       Navigate('/contact')
+  const Navigate = useNavigate();
+  function gotocontact() {
+    Navigate("/contact");
   }
   function shadowon() {
     setShadow(!shadow);
   }
-   const skills = [
+  const skills = [
     {
       name: "HTML",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     },
     {
       name: "CSS",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     },
     {
       name: "JavaScript",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
     {
-        name: "Express",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-      },
+      name: "Express",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    },
     {
       name: "React",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
       name: "Node.js",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     },
     {
       name: "MongoDB",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     },
     {
       name: "Git",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     },
     {
       name: "GitHub",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     },
     {
       name: "Postman",
       image: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
     },
   ];
-  
+
   return (
     <div>
       <div className="profile-container">
-         <div>
-    <div className="hanger">
-      <div className="rope"></div>
-      <div className="knot"></div>
-      <img className="profile-pic avatar" onClick={shadowon} style={{boxShadow: shadow ?  "none" : "0px 0px 50px white"}} src={image} alt="Profile" />
-    </div>
-  </div>
+        <div>
+          <div className="hanger">
+            <div className="rope"></div>
+            <div className="knot"></div>
+            <img
+              className="profile-pic avatar"
+              onClick={shadowon}
+              style={{ boxShadow: shadow ? "none" : "0px 0px 50px white" }}
+              src={image}
+              alt="Profile"
+            />
+          </div>
+        </div>
         <div className="profile-con">
           <h2 style={{ color: "rgb(23, 178, 230)" }}>Hello, I'm</h2>
           <h1>Nithivananthan M</h1>
@@ -99,32 +114,43 @@ function Home({ image}) {
             ></i>
           </a>
           <br></br>
-          <button onClick={gotocontact} className="hire-btn">Hire Me</button>{" "}
-        <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf"><button className="contact-btn">Resume</button></a>
-        <Link to='/about'><h2>Learn More About Me.</h2></Link>
+          <button onClick={gotocontact} className="hire-btn">
+            Hire Me
+          </button>{" "}
+          <a href="/Black and White Clean Professional A4 Resume_20250406_095754_0000.pdf">
+            <button className="contact-btn">Resume</button>
+          </a>
+          <Link to="/about">
+            <h2>Learn More About Me.</h2>
+          </Link>
         </div>
       </div>
-       <div className="skills-container">
-      <div className="skills-slider">
-        {skills.map((skill, index) => (
-          <div className="skill-item" key={index}>
-            <img className="icon-shadow"  src={skill.image} alt={skill.name} />
-          </div>
-        ))}
-        {skills.map((skill, index) => (
-          <div className="skill-item" key={`dup-${index}`}>
-            <img className="icon-shadow" src={skill.image} alt={skill.name} />
-           
-          </div>
-        ))}
-        {skills.map((skill, index) => (
-          <div className="skill-item" key={`dup-${index}`}>
-            <img className="icon-shadow" src={skill.image} alt={skill.name} />
-         
-          </div>
-        ))}
+      <div className="skills-container">
+        <div className="skills-slider">
+          {skills.map((skill, index) => (
+            <div className="skill-item" key={index}>
+              <img className="icon-shadow" src={skill.image} alt={skill.name} />
+            </div>
+          ))}
+          {skills.map((skill, index) => (
+            <div className="skill-item" key={`dup-${index}`}>
+              <img className="icon-shadow" src={skill.image} alt={skill.name} />
+            </div>
+          ))}
+          {skills.map((skill, index) => (
+            <div className="skill-item" key={`dup-${index}`}>
+              <img className="icon-shadow" src={skill.image} alt={skill.name} />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+      <div className="floating-icons">
+        <i className="fab fa-html5"></i>
+        <i className="fab fa-css3-alt"></i>
+        <i className="fab fa-js"></i>
+        <i className="fab fa-react"></i>
+        <i className="fab fa-node-js"></i>
+      </div>
     </div>
   );
 }

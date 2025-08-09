@@ -583,6 +583,44 @@ footer i:hover{
   transform-origin: 50% 0;
   animation: swing 3.5s ease-in-out infinite;
 }
+/* Floating Background Icons */
+.floating-icons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.floating-icons i {
+  position: absolute;
+  font-size: 30px;
+  opacity: 0.2;
+  animation: float 10s linear infinite;
+}
+
+/* Random positions */
+.floating-icons i:nth-child(1) { left: 10%; animation-duration: 12s; }
+.floating-icons i:nth-child(2) { left: 30%; animation-duration: 15s; }
+.floating-icons i:nth-child(3) { left: 50%; animation-duration: 18s; }
+.floating-icons i:nth-child(4) { left: 70%; animation-duration: 20s; }
+.floating-icons i:nth-child(5) { left: 90%; animation-duration: 22s; }
+
+/* Floating animation */
+@keyframes float {
+  0% { top: 100%; transform: translateY(0) rotate(0deg); }
+  100% { top: -10%; transform: translateY(-100vh) rotate(360deg); }
+}
+
+/* Colors for icons */
+.fab.fa-html5 { color: #e34f26; }
+.fab.fa-css3-alt { color: #264de4; }
+.fab.fa-js { color: #f7df1e; }
+.fab.fa-react { color: #61dafb; }
+.fab.fa-node-js { color: #68a063; }
 
 .rope {
   width: 6px;
