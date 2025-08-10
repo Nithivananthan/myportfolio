@@ -36,7 +36,6 @@ function Project() {
           </a>
         </div>
       </div>
-      {/* Floating Icons Background */}
       <div className="floating-icons">
         <i className="fab fa-html5"></i>
         <i className="fab fa-css3-alt"></i>

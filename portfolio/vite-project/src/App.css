@@ -61,7 +61,7 @@ body{
   position: fixed;
   top:0;
   left: 0;
-  background-color:black;
+  background-color: black;
   box-shadow : 1px 0px 1px white;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
